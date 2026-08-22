@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Remove YouTube Shorts",
+  "version": "1.0.0",
+  "description": "Hides Shorts from YouTube homepage, sidebar, and feed",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "content_scripts": [{
+    "matches": ["*://*.youtube.com/*"],
+    "js": ["content.js"],
+    "css": ["styles.css"],
+    "run_at": "document_start"
+  }],
+  "action": {
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "Remove YouTube Shorts"
+  }
+}

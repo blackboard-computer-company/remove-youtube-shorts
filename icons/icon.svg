@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Short-form video hidden</title>
+  <!-- Original artwork created for this extension; no third-party assets. -->
+  <rect width="128" height="128" rx="30" fill="#18181b"/>
+  <rect x="42" y="23" width="44" height="82" rx="14" fill="none" stroke="#ffffff" stroke-width="8"/>
+  <path d="M28 96 100 32" fill="none" stroke="#a78bfa" stroke-width="12" stroke-linecap="round"/>
+</svg>

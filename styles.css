@@ -1,0 +1,23 @@
+/*
+ * CSS handles YouTube's dynamically inserted content without polling or DOM
+ * observers. Keep selectors tied to semantic URLs and component boundaries.
+ */
+html.remove-youtube-shorts ytd-guide-entry-renderer:has(a[title="Shorts"]),
+html.remove-youtube-shorts ytd-guide-entry-renderer:has(a[href="/shorts"]),
+html.remove-youtube-shorts ytd-guide-entry-renderer:has(a[href="/shorts/"]),
+html.remove-youtube-shorts ytd-mini-guide-entry-renderer:has(a[title="Shorts"]),
+html.remove-youtube-shorts ytd-mini-guide-entry-renderer:has(a[href="/shorts"]),
+html.remove-youtube-shorts ytd-mini-guide-entry-renderer:has(a[href="/shorts/"]),
+html.remove-youtube-shorts ytd-rich-shelf-renderer:has(ytm-shorts-lockup-view-model),
+html.remove-youtube-shorts ytd-rich-shelf-renderer:has(ytm-shorts-lockup-view-model-v2),
+html.remove-youtube-shorts ytd-rich-item-renderer:has(a[href^="/shorts/"]),
+html.remove-youtube-shorts ytd-video-renderer:has(a[href^="/shorts/"]),
+html.remove-youtube-shorts ytd-grid-video-renderer:has(a[href^="/shorts/"]),
+html.remove-youtube-shorts ytm-pivot-bar-item-renderer:has(a[href="/shorts"]),
+html.remove-youtube-shorts ytm-pivot-bar-item-renderer:has(a[href="/shorts/"]),
+html.remove-youtube-shorts ytm-rich-item-renderer:has(a[href^="/shorts/"]),
+html.remove-youtube-shorts ytm-item-section-renderer:has(ytm-shorts-lockup-view-model),
+html.remove-youtube-shorts ytm-reel-shelf-renderer,
+html.remove-youtube-shorts ytd-reel-shelf-renderer {
+  display: none !important;
+}
