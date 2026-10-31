@@ -12,12 +12,29 @@
       <img src="icons/icon.svg" width="40" height="40" alt="">
       <h1>Remove YouTube Shorts</h1>
     </div>
-    <p>This extension automatically hides Shorts from your YouTube homepage, sidebar, and feeds.</p>
+    <p>This extension automatically hides Shorts and Playables from your YouTube homepage, sidebar, and feeds.</p>
+    <p>Your YouTube homepage opens Subscriptions instead of recommendations.</p>
+    <section aria-labelledby="blocked-heading">
+      <h2 id="blocked-heading">Blocked websites</h2>
+      <p id="website-help">Block a domain or a path, like youtube.com/shorts/*. Paths match prefixes; * matches any text. Subdomains are included.</p>
+      <form id="block-form">
+        <label for="website">Website to block</label>
+        <div class="input-row">
+          <input id="website" name="website" type="text" placeholder="youtube.com/shorts/*" required autocomplete="off" autocapitalize="none" spellcheck="false" aria-describedby="website-help" disabled>
+          <button id="add-button" type="submit" disabled>Block</button>
+        </div>
+      </form>
+      <p id="status" role="status" aria-live="polite">Loading blocklist…</p>
+      <ul id="blocked-websites" aria-label="Blocked websites"></ul>
+      <p id="empty-state" hidden>No websites blocked yet.</p>
+      <p class="hint">Applies to future page loads, not pages already open or navigation within an app. Query strings and fragments are ignored when adding a rule.</p>
+    </section>
     <a class="source-link" href="https://github.com/AleksaBajat/remove-youtube-shorts" target="_blank" rel="noreferrer">View source on GitHub</a>
   </main>
   <footer>
     <span>Made by:</span>
     <a href="https://github.com/blackboard-computer-company" target="_blank" rel="noreferrer">BlackBoard Computer Company</a>
   </footer>
+  <script type="module" src="popup.js"></script>
 </body>
 </html>

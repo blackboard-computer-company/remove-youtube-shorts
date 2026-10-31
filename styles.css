@@ -21,3 +21,16 @@ html.remove-youtube-shorts ytm-reel-shelf-renderer,
 html.remove-youtube-shorts ytd-reel-shelf-renderer {
   display: none !important;
 }
+
+/* Hide the entire Playables shelf, including its header and controls, as well
+ * as standalone game cards and navigation entries. Match URL boundaries so
+ * unrelated links are not treated as Playables.
+ */
+html.remove-youtube-shorts ytd-rich-shelf-renderer:has(a:is([href="/playables"], [href^="/playables/"], [href^="/playables?"])),
+html.remove-youtube-shorts ytd-rich-shelf-renderer:has(ytd-mini-game-card-view-model),
+html.remove-youtube-shorts ytd-rich-item-renderer:has(ytd-mini-game-card-view-model),
+html.remove-youtube-shorts ytd-rich-item-renderer:has(a[href^="/playables/"]),
+html.remove-youtube-shorts ytd-guide-entry-renderer:has(a:is([href="/playables"], [href^="/playables/"], [href^="/playables?"])),
+html.remove-youtube-shorts ytd-mini-guide-entry-renderer:has(a:is([href="/playables"], [href^="/playables/"], [href^="/playables?"])) {
+  display: none !important;
+}

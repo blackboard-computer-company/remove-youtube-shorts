@@ -1,8 +1,9 @@
 {
   "manifest_version": 3,
   "name": "Remove YouTube Shorts",
-  "version": "1.0.0",
-  "description": "Hides Shorts from YouTube homepage, sidebar, and feed",
+  "version": "1.1.0",
+  "description": "Opens YouTube on Subscriptions, hides Shorts and Playables, and blocks websites you add to your blocklist.",
+  "permissions": ["declarativeNetRequest"],
   "icons": {
     "16": "icons/icon-16.png",
     "32": "icons/icon-32.png",
@@ -21,6 +22,6 @@
       "32": "icons/icon-32.png"
     },
     "default_popup": "popup.html",
-    "default_title": "Remove YouTube Shorts"
+    "default_title": "Remove YouTube Shorts & Block Websites"
   }
 }
